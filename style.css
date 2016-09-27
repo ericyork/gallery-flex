@@ -1,0 +1,52 @@
+/*--
+Defaults
+--*/
+html, body, body div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, a {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 17px;
+}
+body {
+	font-family: 'Raleway';
+	font-weight: 300;
+}
+/*-- css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ --*/
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto Condensed';
+}
+/*--
+Document Styles
+--*/
+img {
+	max-width: 100%;
+}
+main {
+	width: 96%;
+	margin: 0 auto;
+}
+.hero {
+	padding: 50px 50px 0px 8px;
+	font-size: 180%;
+}
+.grid {
+	display: flex;
+	flex-flow: row wrap;
+}
+.panel {
+	margin: 8px;
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;
+}
+footer {
+	padding: 20px 20px 10px 20px;
+	margin-top: 20px;
+	border-top: 4px dashed #999;
+}
+footer p {
+	text-align: center;
+}
