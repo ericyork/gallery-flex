@@ -24,6 +24,9 @@ Document Styles
 img {
 	max-width: 100%;
 }
+img:hover {
+	opacity: .75;
+}
 main {
 	width: 96%;
 	margin: 0 auto;
