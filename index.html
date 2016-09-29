@@ -13,75 +13,76 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<main>
+		<main class="w3-container">
 			<section class="hero">
 					<h1>Maine Photos</h1>
 					<p>Various scenes from Maine showing the rivers, lakes, mountains and ocean. All photos by Eric York.</p>
 			</section>
 			<section class="grid">
 				<div id="whitesmoke" class="panel">
-					<img id="myImg" src="pix/1-pines.jpg" alt="pines" />
+					<img id="myImg" src="pix/1-pines.jpg" alt="pines" onclick="onClick(this)" />
 					<p>Pine tree ridge with mountain.</p>
 				</div>
-				<!-- The Modal -->
-				<div id="myModal" class="modal">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img01">
-				  <div id="caption"></div>
-				</div>
 				<div id="thistle" class="panel">
-					<img src="pix/1-dry.jpg" alt="dry" />
+					<img src="pix/1-dry.jpg" alt="dry" onclick="onClick(this)" />
 					<p>Round rocks at Wonderland Beach.</p>
 				</div>
-				<div class="modal">
-				  <span class="close">×</span>
-				  <img class="modal-content" id="img02">
-				  <div id="caption"></div>
-				</div>
 				<div id="seashell" class="panel">
-					<img src="pix/1-rapids.jpg" alt="rapids" />
+					<img src="pix/1-rapids.jpg" alt="rapids" onclick="onClick(this)" />
 					<p>Penobscot River Rapids.</p>
 				</div>
 				<div id="papayawhip" class="panel">
-					<img src="pix/1-outcrop.jpg" alt="outcrop" />
+					<img src="pix/1-outcrop.jpg" alt="outcrop" onclick="onClick(this)" />
 					<p>Rocky outcrop at Rip Gorge.</p>
 				</div>
 				<div id="mintcream" class="panel">
-					<img src="pix/1-lake.jpg" alt="lake" />
+					<img src="pix/1-lake.jpg" alt="lake" onclick="onClick(this)" />
 					<p>Ambejejus Lake toward the West.</p>
 				</div>
 				<div id="lightsteelblue" class="panel">
-					<img src="pix/1-sunset.jpg" alt="sunset" />
+					<img src="pix/1-sunset.jpg" alt="sunset" onclick="onClick(this)" />
 					<p>Ambejejus Lake at sunset.</p>
 				</div>
 				<div id="lavender" class="panel">
-					<img src="pix/1-snails.jpg" alt="snails" />
+					<img src="pix/1-snails.jpg" alt="snails" onclick="onClick(this)" />
 					<p>A tide ecosystem on Mt. Desert Island.</p>
 				</div>
 				<div id="lightcyan" class="panel">
-					<img src="pix/1-river.jpg" alt="river" />
+					<img src="pix/1-river.jpg" alt="river" onclick="onClick(this)" />
 					<p>East Branch of the Penobscot River.</p>
 				</div>
 				<div id="gainsboro" class="panel">
-					<img src="pix/1-rocks.jpg" alt="rocks" />
+					<img src="pix/1-rocks.jpg" alt="rocks" onclick="onClick(this)" />
 					<p>The shoreline at Wonderland Beach.</p>
 				</div>
 				<div id="azure" class="panel">
-					<img src="pix/1-boats.jpg" alt="boats" />
+					<img src="pix/1-boats.jpg" alt="boats" onclick="onClick(this)" />
 					<p>Working boats in the harbor.</p>
 				</div>
 				<div id="aliceblue" class="panel">
-					<img src="pix/1-wet.jpg" alt="wet" />
+					<img src="pix/1-wet.jpg" alt="wet" onclick="onClick(this)" />
 					<p>Round rocks awash in seafoam.</p>
 				</div>
 				<div id="silver" class="panel">
-					<img src="pix/1-gulls.jpg" alt="gulls" />
+					<img src="pix/1-gulls.jpg" alt="gulls" onclick="onClick(this)" />
 					<p>Gulls walking on the mudflats.</p>
 				</div>
 			</section>
+			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+			  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+			  <div class="w3-modal-content w3-animate-zoom">
+			    <img id="img01" style="width:100%">
+			  </div>
+			</div>
 		</main>
 		<footer>
 			<p>&copy; Eric York, 2016</p>
 		</footer>
+		<script>
+		function onClick(element) {
+		  document.getElementById("img01").src = element.src;
+		  document.getElementById("modal01").style.display = "block";
+		}
+		</script>
 	</body>
 </html>
