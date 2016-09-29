@@ -13,14 +13,14 @@
 		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
-		<main class="w3-container">
+		<main>
 			<section class="hero">
 					<h1>Maine Photos</h1>
-					<p>Various scenes from Maine showing the rivers, lakes, mountains and ocean. All photos by Eric York.</p>
+					<p>Various scenes from Maine showing the rivers, lakes, mountains and ocean.</p>
 			</section>
 			<section class="grid">
 				<div id="whitesmoke" class="panel">
-					<img id="myImg" src="pix/1-pines.jpg" alt="pines" onclick="onClick(this)" />
+					<img src="pix/1-pines.jpg" alt="pines" onclick="onClick(this)" />
 					<p>Pine tree ridge with mountain.</p>
 				</div>
 				<div id="thistle" class="panel">
@@ -68,9 +68,9 @@
 					<p>Gulls walking on the mudflats.</p>
 				</div>
 			</section>
-			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-			  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
-			  <div class="w3-modal-content w3-animate-zoom">
+			<div id="modal01" class="modal" onclick="this.style.display='none'">
+			  <span class="closebtn container">&times;</span>
+			  <div class="modal-content animate-zoom">
 			    <img id="img01" style="width:100%">
 			  </div>
 			</div>
