@@ -24,7 +24,7 @@ Document Styles
 img {
 	max-width: 100%;
 }
-section > div > img:hover {
+.grid > div > img:hover {
 	opacity: .75;
 }
 main {
@@ -32,10 +32,31 @@ main {
 	margin: 0 auto;
 }
 .hero {
-	padding: 50px 50px 20px 8px;
+	padding: 50px 0px 20px 8px;
 	margin-bottom: 10px;
 	font-size: 180%;
 	border-bottom: 4px dashed #999;
+	display: flex;
+	flex-flow: row nowrap;
+}
+.slider {
+	flex-grow: 10;
+}
+.teaser {
+	flex-grow: 1;
+}
+.control-left {
+	z-index: 5;
+	color: #EAEAEA;
+	cursor: pointer;
+}
+.control-right {
+	z-index: 5;
+	color: #EAEAEA;
+	cursor: pointer;
+}
+.clear {
+	clear: both;
 }
 .grid {
 	display: flex;
