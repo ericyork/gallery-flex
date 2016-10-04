@@ -23,6 +23,11 @@ Document Styles
 --*/
 a {
 	text-decoration: none;
+	color: #555;
+	transition: color .6s;
+}
+a:hover {
+	color: #999;
 }
 img {
 	max-width: 100%;
@@ -122,7 +127,7 @@ span:hover.x-mark { /*-- sets close icon color on hover --*/
 }
 /*-- Modal Styles --*/
 .modal {
-	z-index: 3;
+	z-index: 10000;
 	display: none;
 	padding-top: 100px;
 	position: fixed;
@@ -162,18 +167,6 @@ span:hover.x-mark { /*-- sets close icon color on hover --*/
 	display: table;
 	clear: both;
 }
-.animate-zoom {
-	-webkit-animation: animatezoom 0.6s;
-	animation: animatezoom 0.6s;
-}
-@-webkit-keyframes animatezoom {
-	from{-webkit-transform: scale(0);}
-	to{-webkit-transform: scale(1);}
-}
-@keyframes animatezoom {
-	from{transform: scale(0);}
-	to{transform: scale(1);}
-}
 footer {
 	padding: 20px 20px 10px 20px;
 	margin-top: 20px;
@@ -185,4 +178,22 @@ footer p {
 @media screen and (min-width: 768px) {
 	.hero {flex-flow: row wrap;}
 	.teaser {width: 40%;}
+}
+.modal-content {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.animate-zoom {
+	-webkit-animation: zoom 0.6s;
+	animation: zoom 0.6s;
+}
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0);}
+    to {-webkit-transform:scale(1);}
+}
+@keyframes zoom {
+    from {transform:scale(0);}
+    to {transform:scale(1);}
 }
