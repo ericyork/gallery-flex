@@ -188,10 +188,6 @@ footer {
 footer p {
 	text-align: center;
 }
-@media screen and (min-width: 860px) {
-	.hero {flex-flow: row wrap;}
-	.teaser {width: 40%;}
-}
 .modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -209,4 +205,9 @@ footer p {
 @keyframes zoom {
     from {transform:scale(0);}
     to {transform:scale(1);}
+}
+/*-- Media Queries --*/
+@media screen and (min-width: 860px) {
+	.hero {flex-flow: row wrap;}
+	.teaser {width: 40%;}
 }
