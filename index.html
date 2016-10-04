@@ -10,25 +10,43 @@
 		<title>Flexbox Media Gallery</title>
 		<!-- Loads Google Fonts via CDN -->
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,700|Roboto+Condensed" rel="stylesheet">
+		<!-- Loads Document Stylesheets -->
+		<link rel="stylesheet" type="text/css" href="bxslider/bxslider.css" />
 		<link rel="stylesheet" type="text/css" href="style.css" />
+		<!-- Loads jQuery library via CDN -->
+		<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+		<!-- Calls bxSlider Javascript file -->
+		<script src="bxslider/bxslider.min.js"></script>
+		<!-- Calls bxSlider Function -->
+		<script src="bxslider/slider.js"></script>
 	</head>
 	<body>
 		<main>
+			<nav id="main-navigation" class="navigation">
+				 <a href="#"><span class="x-mark">&#10006;</span></a>
+				 <h3>Navigation</h3>
+				 <ul class="">
+					 <li><a href="#">Gallery One</a></li>
+					 <li><a href="#">Gallery Two</a></li>
+					 <li><a href="#">Gallery Three</a></li>
+				 </ul>
+			</nav>
+			<header class="icon-wrap">
+				<a href="#main-navigation"><span class="hamburger">&#9776;</span></a>
+			</header>
 			<section class="hero">
-				<div class="slider">
-					<img class="mySlides" src="pix/mtn.png">
-					<img class="mySlides" src="pix/river.png">
-					<img class="mySlides" src="pix/gorge.png">
-					<img class="mySlides" src="pix/pine.png">
+				<div class="slides-container">
+					<ul class="bxslider">
+						<li><img src="pix/mtn.png" title="Mt. Katahdin from the south, at Ripogenus Dam" alt="mountain" /></li>
+						<li><img src="pix/river.png" title="East Branch of the Penobscot River" alt="river" /></li>
+						<li><img src="pix/gorge.png" title="Ripogenus Gorge from above" alt="gorge" /> </li>
+						<li><img src="pix/pine.png" title="Pine tree hollow" alt="pine" /></li>
+					</ul>
 				</div>
-				<!-- slider controls -->
-				<a class="control-left" onclick="plusDivs(-1)">❮</a>
-				<a class="control-right" onclick="plusDivs(1)">❯</a>
 				<div class="teaser">
 					<h1>Maine Photos</h1>
 					<p>Various scenes from Maine showing the rivers, lakes, mountains and ocean.</p>
 				</div>
-				<div class="clear"></div>
 			</section>
 			<section class="grid">
 				<div id="whitesmoke" class="panel">
