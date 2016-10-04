@@ -23,11 +23,11 @@ Document Styles
 --*/
 a {
 	text-decoration: none;
-	color: #555;
+	color: purple;
 	transition: color .6s;
 }
 a:hover {
-	color: #999;
+	color: magenta;
 }
 img {
 	max-width: 100%;
@@ -84,7 +84,7 @@ a.bx-next {/*-- corrects next button position --*/
   position: fixed;
   top: 0;
   right: 0;
-  height: 42%; /*-- sets the nav panel height --*/
+  height: 45%; /*-- sets the nav panel height --*/
 	transition: width .4s ease;
 	background-color: #EAEAEA;
 	z-index: 10000;
