@@ -175,7 +175,7 @@ footer {
 footer p {
 	text-align: center;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 860px) {
 	.hero {flex-flow: row wrap;}
 	.teaser {width: 40%;}
 }
