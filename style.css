@@ -41,7 +41,6 @@ main {
 }
 .hero {
 	padding-top: 100px;
-	font-size: 180%;
 	border-bottom: 4px dashed #999;
 	display: flex;
 	flex-flow: column-reverse;
@@ -50,6 +49,7 @@ main {
 	flex-grow: 6;
 }
 .teaser {
+	font-size: 180%;
 	padding: 0 16px 32px 16px;
 }
 .grid {
@@ -60,6 +60,20 @@ main {
 	margin: 8px;
 	flex-grow: 1;
 	flex-basis: 300px;
+}
+/*-- BxSlider Style Corrections --*/
+.bx-wrapper .bx-viewport {
+	background: rgba(255,255,255,0);
+	border-color: rgba(255,255,255,0);
+	box-shadow: none;
+}
+.bx-caption { /*-- corrects caption position --*/
+	margin-bottom: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+a.bx-next {/*-- corrects next button position --*/
+	margin-right: 10px;
 }
 /*-- Navigation Panel Styles --*/
 #main-navigation:target {/*-- sets width of nav panel when opened on small screens --*/
